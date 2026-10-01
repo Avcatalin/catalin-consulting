@@ -1,0 +1,33 @@
+{
+  "name": "catalin-website-design-v3",
+  "version": "1.0.0",
+  "description": "Catalin Avarvarei — Next.js website",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "audit:performance": "node scripts/audit-performance.mjs",
+    "format": "prettier --write app components lib scripts tests *.ts *.json README.md"
+  },
+  "dependencies": {
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "chrome-launcher": "^1.2.2",
+    "lighthouse": "^13.5.0",
+    "prettier": "^3.9.9",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
