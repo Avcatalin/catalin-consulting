@@ -452,10 +452,11 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="cta">
+      <section className="cta" aria-labelledby="cta-heading">
         <div className="wrap cta-grid">
           <div>
-            <h2>
+            <span className="eyebrow">Build something better</span>
+            <h2 id="cta-heading">
               Let’s make HubSpot work
               <br />
               for your business.
@@ -465,9 +466,12 @@ export default function Page() {
               need an extra pair of hands.
             </p>
           </div>
-          <Link className="button white" href="/book-a-call">
-            Let’s talk
-          </Link>
+          <div className="cta-action">
+            <Link className="button white" href="/book-a-call">
+              Let’s talk <span aria-hidden="true">↗</span>
+            </Link>
+            <span>A 30-minute conversation to get started.</span>
+          </div>
         </div>
       </section>
     </>
